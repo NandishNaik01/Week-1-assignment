@@ -8,7 +8,16 @@
 */
 
 function isAnagram(str1, str2) {
+  sortedstr1=str1.split('').sort().join('')
+  sortedstr2=str2.split('').sort().join('')
+  if(sortedstr1 == sortedstr2){
+    console.log('anagram');
+  }else{
+    console.log('not anagram');
+  }
+
 
 }
+isAnagram('NAYAN','AANNY')
 
-module.exports = isAnagram;
+// module.exports = isAnagram;
